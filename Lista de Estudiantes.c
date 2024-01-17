@@ -22,7 +22,12 @@ int main()
         scanf("%d", &menu);
         switch (menu)
         {
+        case 1:
         
+        case 2:
+           
+        default:
+            break;
         }
     }
     return 0;
