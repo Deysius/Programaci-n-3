@@ -48,7 +48,27 @@ int main()
             break;
 
         case 2:
+            for (int i = 0; i < num_estudiantes; i++)
+            {
+                if (i < num_estudiantes)
+                {
+                    printf("\nEstudiante %d:\n", i + 1);
+                    printf("Nombre: ");
+                    puts(estudiante[i].nombre);
 
+                    printf("Direccion: ");
+                    puts(estudiante[i].direccion);
+
+                    printf("Materia: ");
+                    puts(estudiante
+                    [i].materia);
+
+                    printf("Matrícula: %d\n", estudiante[i].matricula);
+                    printf("Nota: %.3f\n", estudiante[i].nota);
+                }
+            }
+            fflush(stdin);
+            break;
         default:
             break;
         }
