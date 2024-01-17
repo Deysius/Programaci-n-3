@@ -23,9 +23,18 @@ int main()
         switch (menu)
         {
         case 1:
-        
+            printf("Ingrese la matrícula: ");
+            scanf("%d", &estudiante[num_estudiantes].matricula);
+            fflush(stdin);
+
+            printf("Ingrese el nombre: ");
+            fgets(estudiante[num_estudiantes].nombre, 50, stdin);
+            fflush(stdin);
+
+            break;
+
         case 2:
-           
+            break;
         default:
             break;
         }
