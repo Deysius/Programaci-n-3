@@ -31,10 +31,24 @@ int main()
             fgets(estudiante[num_estudiantes].nombre, 50, stdin);
             fflush(stdin);
 
+            printf("Ingrese la dirección: ");
+            fgets(estudiante[num_estudiantes].direccion, 50, stdin);
+            fflush(stdin);
+
+            printf("Ingrese la materia: ");
+            fgets(estudiante[num_estudiantes].materia, 50, stdin);
+            fflush(stdin);
+
+            printf("Ingrese la nota: ");
+            scanf("%f", &estudiante[num_estudiantes].nota);
+            fflush(stdin);
+
+            num_estudiantes++;
+            fflush(stdin);
             break;
 
         case 2:
-            break;
+
         default:
             break;
         }
